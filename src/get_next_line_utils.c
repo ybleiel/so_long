@@ -6,7 +6,7 @@
 /*   By: ybleiel <ybleiel@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 15:58:24 by ybleiel           #+#    #+#             */
-/*   Updated: 2022/02/22 14:10:43 by ybleiel          ###   ########.fr       */
+/*   Updated: 2022/02/25 16:20:15 by ybleiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,4 +83,30 @@ char	*ft_strdup(char *src)
 		c++;
 	}
 	return (dest);
+}
+
+void	check_chars(int x, char *line)
+{
+	int	counter;
+
+	counter = 0;
+	if (line[x] == '0')
+		counter = 1;
+	if (line[x] == '1')
+		counter = 1;
+	if (line[x] == 'P')
+		counter = 1;
+	if (line[x] == 'C')
+		counter = 1;
+	if (line[x] == 'E')
+		counter = 1;
+	if (line[x] == 'X')
+		counter = 1;
+	if (line[x] == '\n' || line[x] == '\0')
+		counter = 1;
+	if (counter != 1)
+	{
+		ft_printf("Error: Invalid map\n");
+		exit(0);
+	}
 }

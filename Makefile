@@ -6,7 +6,7 @@
 #    By: ybleiel <ybleiel@student.42wolfsburg.de>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/03 12:02:26 by ybleiel           #+#    #+#              #
-#    Updated: 2022/02/24 14:36:32 by ybleiel          ###   ########.fr        #
+#    Updated: 2022/02/25 11:27:38 by ybleiel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ CFLAGS		=	-Wall -Werror -Wextra
 so_long:	$(OBJS)
 			cd mlx && make
 			cd ft_printf && make
-			gcc $(OBJS) ft_printf/libftprintf.a libmlx.dylib -o $@
+			gcc $(OBJS) ft_printf/libftprintf.a -Lmlx -lmlx -framework OpenGL -framework AppKit -o $@
 
 all:		so_long
 

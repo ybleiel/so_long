@@ -6,7 +6,7 @@
 /*   By: ybleiel <ybleiel@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 15:52:46 by ybleiel           #+#    #+#             */
-/*   Updated: 2022/02/24 12:34:46 by ybleiel          ###   ########.fr       */
+/*   Updated: 2022/02/25 16:22:26 by ybleiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ void	check_recktangle(int nr1, int nr2, char *nl)
 
 void	check_assets(t_window *window, int x, int y, char *line)
 {
+	check_chars(x, line);
 	if (line[x] == '1')
 		ft_set_wall(window, x * 100, y * 100);
 	if (line[x] == 'P')

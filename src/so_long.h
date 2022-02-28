@@ -6,7 +6,7 @@
 /*   By: ybleiel <ybleiel@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 13:41:27 by ybleiel           #+#    #+#             */
-/*   Updated: 2022/02/24 13:17:40 by ybleiel          ###   ########.fr       */
+/*   Updated: 2022/02/25 16:14:21 by ybleiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,5 +78,6 @@ void	check_cage(t_window *window, int fd);
 void	map_invalid(t_window *window, char *line, int i, int y);
 void	check_enemy(t_window *window);
 void	move_count(t_window *window, int number);
+void	check_chars(int x, char *line);
 
 #endif

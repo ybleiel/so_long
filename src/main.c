@@ -6,7 +6,7 @@
 /*   By: ybleiel <ybleiel@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 13:08:14 by ybleiel           #+#    #+#             */
-/*   Updated: 2022/02/24 14:35:43 by ybleiel          ###   ########.fr       */
+/*   Updated: 2022/02/25 19:24:08 by ybleiel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_init_window(t_window *window)
 	x = window->win_size_x;
 	y = window->win_size_y;
 	window->mlx = mlx_init();
-	window->mlx_win = mlx_new_window(window->mlx, x, y, "so_long");
+	window->mlx_win = mlx_new_window(window->mlx, x - 10, y - 10, "so_long");
 }
 
 void	ft_check_filename(char **argv)
